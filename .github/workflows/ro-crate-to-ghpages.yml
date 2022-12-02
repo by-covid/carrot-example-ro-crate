@@ -19,6 +19,7 @@ jobs:
         with:
           files: |
             ro-crate-preview.html
+            index.html
           commit-message: |
             Updated RO-Crate preview
             
