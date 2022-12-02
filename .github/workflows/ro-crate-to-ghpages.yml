@@ -16,6 +16,8 @@ jobs:
 
       - name: Commit RO Crate Preview
         uses: swinton/commit@v2.0.0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
         with:
           files: |
             ro-crate-preview.html
