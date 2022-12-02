@@ -49,31 +49,68 @@
       "author": {
         "@id": "#SomeUser"
       },
-      "name": "WhiteRabbit Scan Report",
-      "@reverse": {
-        "about": [
-          {
-            "@id": "ro-crate-metadata.json"
-          }
-        ]
-      }
+      "name": "WhiteRabbit Scan Report"
     },
     {
-      "@id": "#SomeUser",
-      "@type": "Person",
-      "name": "Stian Soiland-Reyes",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "./"
-          }
-        ],
-        "agent": [
-          {
-            "@id": "#WhiteRabbit19238891"
-          }
-        ]
-      }
+      "@id": "Dictionarycsv.csv",
+      "@type": "File",
+      "conformsTo": {
+        "@id": "https://co-connect.ac.uk/co-connect-data-files-and-meta-data-standardisation/#data-dictionary"
+      },
+      "about": [
+        {
+          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Covid19.csv"
+        },
+        {
+          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Demographics.csv"
+        }
+      ],
+      "description": "Data Dictionary",
+      "encodingFormat": "text/csv",
+      "name": "Dictionarycsv"
+    },
+    {
+      "@id": "ScanReport.xlsx",
+      "@type": "File",
+      "conformsTo": {
+        "@id": "http://ohdsi.github.io/WhiteRabbit/WhiteRabbit.html#reading-the-scan"
+      },
+      "about": {
+        "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/"
+      },
+      "description": "The converted picture, now sepia-colored",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "name": "Scan report"
+    },
+    {
+      "@id": "cpm_provenance.provn",
+      "@type": [
+        "File",
+        "CPMProvenanceFile"
+      ],
+      "description": "CPM compliant provenance file generated based on the computation log file.",
+      "encodingFormat": [
+        "text/provenance-notation",
+        {
+          "@id": "http://www.w3.org/TR/2013/REC-prov-n-20130430/"
+        }
+      ],
+      "name": "CPM provenance"
+    },
+    {
+      "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/",
+      "@type": "Dataset",
+      "description": "Deidentified data to be scanned",
+      "hasPart": [
+        {
+          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Covid19.csv"
+        },
+        {
+          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Demographics.csv"
+        }
+      ],
+      "identifier": "asdfkjaskdfjaskdjf",
+      "name": "scanned_data"
     },
     {
       "@id": "#WhiteRabbit19238891",
@@ -92,96 +129,24 @@
       },
       "result": {
         "@id": "ScanReport.xlsx"
-      },
-      "@reverse": {
-        "mentions": [
-          {
-            "@id": "./"
-          }
-        ]
       }
     },
     {
-      "@id": "Dictionarycsv.csv",
-      "@type": "File",
-      "conformsTo": {
-        "@id": "https://co-connect.ac.uk/co-connect-data-files-and-meta-data-standardisation/#data-dictionary"
-      },
-      "about": [
-        {
-          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Covid19.csv"
-        },
-        {
-          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Demographics.csv"
-        }
-      ],
-      "description": "Data Dictionary",
-      "encodingFormat": "text/csv",
-      "name": "Dictionarycsv",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@id": "#SomeUser",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes"
     },
     {
-      "@id": "ScanReport.xlsx",
-      "@type": "File",
-      "conformsTo": {
-        "@id": "http://ohdsi.github.io/WhiteRabbit/WhiteRabbit.html#reading-the-scan"
-      },
-      "about": {
-        "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/"
-      },
-      "description": "The converted picture, now sepia-colored",
-      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      "name": "Scan report",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ],
-        "result": [
-          {
-            "@id": "#WhiteRabbit19238891"
-          }
-        ]
-      }
+      "@id": "https://github.com/OHDSI/WhiteRabbit/releases/tag/v0.10.7",
+      "@type": "SoftwareApplication",
+      "name": "WhiteRabbit",
+      "url": "http://ohdsi.github.io/WhiteRabbit/",
+      "version": "0.10.7"
     },
     {
-      "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/",
-      "@type": "Dataset",
-      "description": "Deidentified data to be scanned",
-      "hasPart": [
-        {
-          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Covid19.csv"
-        },
-        {
-          "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Demographics.csv"
-        }
-      ],
-      "identifier": "asdfkjaskdfjaskdjf",
-      "name": "scanned_data",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ],
-        "object": [
-          {
-            "@id": "#WhiteRabbit19238891"
-          }
-        ],
-        "about": [
-          {
-            "@id": "ScanReport.xlsx"
-          }
-        ]
-      }
+      "@id": "https://co-connect.ac.uk/co-connect-data-files-and-meta-data-standardisation/#data-dictionary",
+      "@type": "WebPage",
+      "name": "CO-CONNECT Data Dictionery"
     },
     {
       "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Covid19.csv",
@@ -193,19 +158,7 @@
         "Test",
         "Symptom",
         "Testtype"
-      ],
-      "@reverse": {
-        "about": [
-          {
-            "@id": "Dictionarycsv.csv"
-          }
-        ],
-        "hasPart": [
-          {
-            "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/"
-          }
-        ]
-      }
+      ]
     },
     {
       "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/Demographics.csv",
@@ -215,79 +168,12 @@
         "PersonID",
         "Date_of_Birth",
         "Sex"
-      ],
-      "@reverse": {
-        "about": [
-          {
-            "@id": "Dictionarycsv.csv"
-          }
-        ],
-        "hasPart": [
-          {
-            "@id": "arcp://uuid,c6179148-3cde-4435-8e66-304453f89d59/scanned_data/"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "cpm_provenance.provn",
-      "@type": [
-        "File",
-        "CPMProvenanceFile"
-      ],
-      "description": "CPM compliant provenance file generated based on the computation log file.",
-      "encodingFormat": [
-        "text/provenance-notation",
-        {
-          "@id": "http://www.w3.org/TR/2013/REC-prov-n-20130430/"
-        }
-      ],
-      "name": "CPM provenance",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      ]
     },
     {
       "@id": "http://ohdsi.github.io/WhiteRabbit/WhiteRabbit.html#reading-the-scan",
       "@type": "WebPage",
-      "name": "WhiteRabbit Scan Report",
-      "@reverse": {
-        "conformsTo": [
-          {
-            "@id": "ScanReport.xlsx"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://co-connect.ac.uk/co-connect-data-files-and-meta-data-standardisation/#data-dictionary",
-      "@type": "WebPage",
-      "name": "CO-CONNECT Data Dictionery",
-      "@reverse": {
-        "conformsTo": [
-          {
-            "@id": "Dictionarycsv.csv"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://github.com/OHDSI/WhiteRabbit/releases/tag/v0.10.7",
-      "@type": "SoftwareApplication",
-      "name": "WhiteRabbit",
-      "url": "http://ohdsi.github.io/WhiteRabbit/",
-      "version": "0.10.7",
-      "@reverse": {
-        "instrument": [
-          {
-            "@id": "#WhiteRabbit19238891"
-          }
-        ]
-      }
+      "name": "WhiteRabbit Scan Report"
     }
   ]
 }
@@ -295,7 +181,7 @@
 
     
 <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
-<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
+<script src="https://unpkg.com/ro-crate-html@0.1/dist/ro-crate-dynamic.min.js"></script>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
