@@ -1,0 +1,188 @@
+{
+      "metadata": {
+            "date_created": "2021-10-27T10:48:39.171060",
+            "dataset": "SmokeTest"
+      },
+      "cdm": {
+            "condition_occurrence": {
+                  "Disease caused by 2019-nCoV": {
+                        "condition_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom",
+                              "term_mapping": {
+                                    "840539006": 37311061
+                              }
+                        },
+                        "condition_end_datetime": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Date"
+                        },
+                        "condition_source_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom",
+                              "term_mapping": {
+                                    "840539006": 37311061
+                              }
+                        },
+                        "condition_source_value": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom"
+                        },
+                        "condition_start_datetime": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Date"
+                        },
+                        "person_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "PersonID"
+                        }
+                  }
+            },
+            "observation": {
+                  "No symptom pattern": {
+                        "observation_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom",
+                              "term_mapping": {
+                                    "162493000": 4036778
+                              }
+                        },
+                        "observation_datetime": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Date"
+                        },
+                        "observation_source_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom",
+                              "term_mapping": {
+                                    "162493000": 4036778
+                              }
+                        },
+                        "observation_source_value": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Symptom"
+                        },
+                        "person_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "PersonID"
+                        }
+                  },
+                  "Inpatient discharge facility [OASIS]": {
+                        "observation_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Testtype",
+                              "term_mapping": {
+                                    "46457-8": 3049730
+                              }
+                        },
+                        "observation_datetime": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Date"
+                        },
+                        "observation_source_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Testtype",
+                              "term_mapping": {
+                                    "46457-8": 3049730
+                              }
+                        },
+                        "observation_source_value": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Testtype"
+                        },
+                        "person_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "PersonID"
+                        }
+                  }
+            },
+            "person": {
+                  "FEMALE": {
+                        "birth_datetime": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Date_of_Birth"
+                        },
+                        "gender_concept_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex",
+                              "term_mapping": {
+                                    "F": 8532
+                              }
+                        },
+                        "gender_source_concept_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex",
+                              "term_mapping": {
+                                    "F": 8532
+                              }
+                        },
+                        "gender_source_value": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex"
+                        },
+                        "person_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "PersonID"
+                        }
+                  },
+                  "MALE": {
+                        "birth_datetime": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Date_of_Birth"
+                        },
+                        "gender_concept_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex",
+                              "term_mapping": {
+                                    "M": 8507
+                              }
+                        },
+                        "gender_source_concept_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex",
+                              "term_mapping": {
+                                    "M": 8507
+                              }
+                        },
+                        "gender_source_value": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "Sex"
+                        },
+                        "person_id": {
+                              "source_table": "Demographics.csv",
+                              "source_field": "PersonID"
+                        }
+                  }
+            },
+            "measurement": {
+                  "Measurement of 2019 novel coronavirus antibody": {
+                        "measurement_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Test",
+                              "term_mapping": 37310258
+                        },
+                        "measurement_datetime": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Date"
+                        },
+                        "measurement_source_concept_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Test",
+                              "term_mapping": 37310258
+                        },
+                        "measurement_source_value": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Test"
+                        },
+                        "person_id": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "PersonID"
+                        },
+                        "value_as_number": {
+                              "source_table": "Covid19.csv",
+                              "source_field": "Test"
+                        }
+                  }
+            }
+      }
+}

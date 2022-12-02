@@ -1,0 +1,3 @@
+document
+    entity(scanned_data/Covid19.csv)
+endDocument
