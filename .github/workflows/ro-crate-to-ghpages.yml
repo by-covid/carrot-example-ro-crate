@@ -14,7 +14,15 @@ jobs:
       - name: Build RO Crate Preview
         uses: ResearchObject/ro-crate-preview-action@v1.2.0
 
-      - name: Deploy
+      - name: Commit RO Crate Preview
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ro-crate-preview.html
+          git commit -m "Updated RO-Crate preview"
+          git push
+
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: .
